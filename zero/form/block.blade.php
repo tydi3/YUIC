@@ -5,6 +5,7 @@
     'module' => null,
     'actions' => 'create|update|clone',
 ])
+
 <form wire:submit.prevent="{{ $submit }}('{{ $action }}', '{{ $rowID }}')">
 	@csrf
 
