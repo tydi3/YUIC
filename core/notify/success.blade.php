@@ -8,5 +8,5 @@
 @endphp
 
 <div wire:loading.remove {{ $attributes->merge(['class' => $css]) }}>
-	{{ $message }}
+	{!! $message !!}
 </div>
