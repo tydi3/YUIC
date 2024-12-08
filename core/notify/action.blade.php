@@ -19,5 +19,5 @@
 
     timeout = setTimeout(() => { shown = false }, 2500);
 })" x-show.transition.out.opacity.duration.2000ms="shown" x-transition:leave.opacity.duration.2000ms style="display: none;" {{ $attributes->merge(['class' => 'mt-4 p-2 text-sm' . $css]) }}>
-	{{ $slot->isEmpty() ? (!empty($message) ? StringX::sentenceCase($message) : 'Action completed') : $slot }}
+	{{ $slot->isEmpty() ? (!empty($message) ? StringX::sentence($message) : 'Action completed') : $slot }}
 </div>
