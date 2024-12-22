@@ -26,7 +26,7 @@
 					<x-yale.zero.button.reset.update :module="$module" :submit="$submit" :rowID="$rowID" />
 				@elseif($action === 'clone')
 					<x-yale.zero.button.save label='save as' :moduleX=$module :submit="$submit" :action="$action" />
-					<x-yale.zero.button.reset.update :module="$module" :submit="$submit" :rowID="$rowID" />
+					<x-yale.zero.button.reset.clone :module="$module" :submit="$submit" :rowID="$rowID" />
 				@endif
 			</div>
 		</div>
